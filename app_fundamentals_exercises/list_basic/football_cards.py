@@ -1,7 +1,8 @@
 from tkinter import *
 
+
 def football_cards():
-    from app_fundamentals_exercises.list_basic import list_basic_task
+    from list_basic import list_basic_task
     root = Tk()
     root.geometry("724x455")
     root.title("Football Cards")
