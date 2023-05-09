@@ -1,7 +1,7 @@
 from tkinter import *
 
 def password_validator():
-    from app_fundamentals_exercises.function import function_task
+    from function import function_task
     root = Tk()
     root.geometry("600x520")
     root.title("Password Validator")

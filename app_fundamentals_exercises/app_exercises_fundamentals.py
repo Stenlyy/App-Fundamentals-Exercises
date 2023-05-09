@@ -33,6 +33,7 @@ list_basic_exercises.add_command(label="Invert Values", command=list_basic_menus
 list_basic_exercises.add_command(label="Multiples List", command=list_basic_menus.multiples_list)
 list_basic_exercises.add_command(label="Football cards", command=list_basic_menus.football_cards)
 list_basic_exercises.add_command(label="Number beggars", command=list_basic_menus.number_beggars)
+list_basic_exercises.add_command(label="Seize the fire", command=list_basic_menus.seize_the_fire)
 
 
 # Function Menu
