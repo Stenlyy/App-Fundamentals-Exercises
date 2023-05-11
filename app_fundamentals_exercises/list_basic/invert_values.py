@@ -1,7 +1,8 @@
 from tkinter import *
-def invert_values():
 
-    from app_fundamentals_exercises.list_basic import list_basic_task
+
+def invert_values():
+    from list_basic import list_basic_task
 
     root = Tk()
     root.geometry("645x200")
@@ -28,11 +29,11 @@ def invert_values():
 
         result_box.insert(END, str(the_opposite_number))
 
-        input_entry.delete("0",END)
+        input_entry.delete("0", END)
 
     # task
 
-    text_box = Text(root,  height=9, wrap=WORD)
+    text_box = Text(root, height=9, wrap=WORD)
 
     text_box.insert(INSERT, list_basic_task.invert_values())
     text_box.place(x=0, y=0)
@@ -41,20 +42,17 @@ def invert_values():
     # input
     input_label = Label(root, text="Add your Input:", bg="#E4CD5B")
     input_entry = Entry(root)
-    input_label.place(x=0, y= 160)
-    input_entry.place(x=90, y= 160)
+    input_label.place(x=0, y=160)
+    input_entry.place(x=90, y=160)
 
     # Confirm button
     confirm_button = Button(root, text="Confirm", command=get_input_value)
-    confirm_button.place(x=220, y= 160)
-
+    confirm_button.place(x=220, y=160)
 
     result_box = Text(root, height=1, width=30, state=DISABLED)
-    result_box.place(x= 300, y=160)
-
-
-
+    result_box.place(x=300, y=160)
 
     root.mainloop()
+
 
 invert_values()
