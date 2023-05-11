@@ -1,7 +1,8 @@
 from tkinter import *
 
+
 def number_beggars():
-    import app_fundamentals_exercises.list_basic.list_basic_task
+    import list_basic.list_basic_task
 
     root = Tk()
     root.geometry("645x285")
@@ -32,7 +33,6 @@ def number_beggars():
         if not beggars.isdigit():
             all_are_numbers = False
 
-
         if all_are_numbers:
             beggars = int(beggars)
 
@@ -51,19 +51,17 @@ def number_beggars():
         numbers_entry.delete("0", END)
         count_of_beggars_entry.delete("0", END)
 
-
-
     # Task
     text_box = Text(root, height=13, wrap=WORD)
-    text_box.insert(INSERT, app_fundamentals_exercises.list_basic.list_basic_task.number_beggars())
+    text_box.insert(INSERT, list_basic.list_basic_task.number_beggars())
     text_box.place(x=0, y=0)
     text_box.config(state=DISABLED)
 
     # input
     numbers_label = Label(root, text="Numbers:", bg="purple", fg="white", font="bold")
     numbers_entry = Entry(root)
-    numbers_label.place(x=0, y= 220)
-    numbers_entry.place(x=77, y= 223)
+    numbers_label.place(x=0, y=220)
+    numbers_entry.place(x=77, y=223)
 
     count_of_beggars_label = Label(root, text="Count of beggars:", bg="purple", fg="white", font="bold")
     count_of_beggars_entry = Entry(root)
@@ -79,8 +77,7 @@ def number_beggars():
     result_box = Text(root, height=1, width=30, state=DISABLED)
     result_box.place(x=370, y=242)
 
-
-
     root.mainloop()
+
 
 number_beggars()
