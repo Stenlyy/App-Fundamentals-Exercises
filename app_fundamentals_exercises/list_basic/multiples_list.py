@@ -2,7 +2,7 @@ from tkinter import *
 
 
 def multiples_list():
-    from app_fundamentals_exercises.list_basic import list_basic_task
+    from list_basic import list_basic_task
 
     root = Tk()
     root.geometry("645x310")
