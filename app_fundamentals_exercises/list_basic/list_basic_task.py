@@ -25,6 +25,33 @@ def football_cards():
 def number_beggars():
     return "Number Beggars:\nYou need add 2 both lines. On the first line, you need add numbers, " \
            "separated by a comma and a space ", ". On the second line, you add a count of beggars. Your result" \
-                                                " is a list with the sum of what each beggar brings home, assuming they all take regular turns, from" \
-                                                " the first to the last number in the list.\n\nExample:\nInput:\n3, 4, 5, 1, 29, 4\n6" \
+                                                " is a list with the sum of what each beggar brings home, assuming " \
+                                                "they all take regular turns, from" \
+                                                " the first to the last number in the list.\n\nExample:\nInput:" \
+                                                "\n3, 4, 5, 1, 29, 4\n6" \
                                                 "\nOutput:\n[3, 4, 5, 1, 29, 4]"
+
+
+def seize_the_fire():
+    return """A program that calculates the water needed to put out a "fire cell", based on the given information about its "fire level" and how much it gets affected by water. 
+First, you will be given the level of fire inside the cell with  value of the cell, which represents the needed water to put out the fire.  They will be given in the following format: 
+
+                                        typeOfFire= valueOfCell#typeOfFirE = valueOfCell# … typeOfFirE = valueOfCell
+
+Afterward you will receive the amount of water you have for putting out the fires. There is a range of fire for each fire type, and if a cell's value is below or exceeds it, it is invalid, and you do not need to put it out. 
+                                                                Type of Fire 	                                    Range 
+                                                                    
+                                                                High 	                                            81 - 125 
+                                                                Medium              	                            51 - 80 
+                                                                Low 	                                            1 - 50 
+
+                                                                                            Example:
+                               Input 	                                                                                                                        Output: 
+High = 89#Low = 28#Medium = 77#Low = 23                                                                                   Cells:                                          
+1250                                                                                                                                                        -	89  
+                                                                                                                                                                 -	28 
+                                                                                                                                                                 -	77 
+                                                                                                                                                                 -	23 
+                                                                                                                                                                 Effort: 54.25 
+                                                                                                                                                                 Total Fire: 217 
+"""
